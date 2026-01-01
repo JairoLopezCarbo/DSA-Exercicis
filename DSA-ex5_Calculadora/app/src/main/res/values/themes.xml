@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Calculator" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- <item name="materialButtonStyle">@style/MiBotonEstilo</item> -->
+        <item name="android:windowBackground">@drawable/bg_calc_gradient</item>
+    </style>
+
+
+
+    <style name="Theme.Calculator" parent="Base.Theme.Calculator" />
+
+    <style name="Widget.Calc" parent="Widget.Material3.Button">
+    </style>
+
+    <style name="Widget.Calc.Button" parent="Widget.Calc">
+    </style>
+</resources>

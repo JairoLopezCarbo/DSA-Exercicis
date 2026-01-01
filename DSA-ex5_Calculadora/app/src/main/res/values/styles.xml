@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Forma redondeada común a todos -->
+    <style name="ShapeAppearance.Calc.Round" parent="ShapeAppearance.Material3.MediumComponent">
+        <!-- 50% = forma de píldora/círculo según el tamaño del botón -->
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <!-- Base para todos los botones de la calculadora -->
+    <style name="Widget.Calc.ButtonBase" parent="Widget.Material3.Button">
+        <item name="shapeAppearance">@style/ShapeAppearance.Calc.Round</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="iconPadding">8dp</item>
+        <item name="strokeWidth">2dp</item>
+        <!-- Deja el ripple por defecto de M3 o cámbialo si querés -->
+    </style>
+
+    <!-- 1) Números -->
+    <style name="Widget.Calc.Button.Number" parent="Widget.Calc.ButtonBase">
+        <item name="backgroundTint">@color/calc_num_bg</item>
+        <item name="strokeColor">@color/calc_num_stroke</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- 2) Operaciones (+, −, ×, ÷, %, etc.) -->
+    <style name="Widget.Calc.Button.Operation" parent="Widget.Calc.Button">
+        <item name="backgroundTint">@color/calc_op_bg</item>
+        <item name="strokeColor">@color/calc_op_stroke</item>
+        <item name="android:textColor">@color/calc_text_light</item>
+    </style>
+
+    <!-- 3) Acciones (= y AC) -->
+    <style name="Widget.Calc.Button.Action" parent="Widget.Calc.ButtonBase">
+        <item name="backgroundTint">@color/calc_act_bg</item>
+        <item name="strokeColor">@color/calc_act_stroke</item>
+        <!-- Si prefieres blanco: usa @color/calc_text_light -->
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- Texto del resultado (grande, monoespacio, alineado a la derecha) -->
+    <style name="Widget.Calc.ResultText">
+        <item name="android:background">@drawable/bg_result_panel</item>
+        <item name="android:textColor">@color/calc_text_primary</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:gravity">end|center_vertical</item>
+        <item name="android:minHeight">64dp</item>
+    </style>
+
+    <!-- Input de fórmula (mediano, hint más suave) -->
+    <!-- Si usas EditText “normal” -->
+    <style name="Widget.Calc.FormulaEditText">
+        <item name="android:background">@drawable/bg_input_panel</item>
+        <item name="android:textColor">@color/calc_text_primary</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textColorHint">@color/calc_text_secondary</item>
+        <item name="android:imeOptions">flagNoExtractUi</item>
+        <item name="android:inputType">text</item>
+    </style>
+
+    <!-- (Opcional) Si usas TextInputLayout + TextInputEditText -->
+    <style name="Widget.Calc.TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@android:color/transparent</item>
+        <item name="boxStrokeColor">@color/calc_panel_stroke</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.Material3.MediumComponent</item>
+        <item name="hintEnabled">true</item>
+    </style>
+
+    <style name="Widget.Calc.TextInputEditText">
+        <item name="android:textColor">@color/calc_text_primary</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:padding">10dp</item>
+    </style>
+</resources>

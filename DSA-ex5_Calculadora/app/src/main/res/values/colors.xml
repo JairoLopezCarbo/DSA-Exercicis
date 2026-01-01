@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- Fondo -->
+    <color name="calc_bg_start">#FF0F2027</color>   <!-- azul petróleo -->
+    <color name="calc_bg_end">#FF203A43</color>    <!-- teal oscuro -->
+
+    <!-- Paneles -->
+    <color name="calc_panel_bg">#F2FFFFFF</color>  <!-- blanco 95% -->
+    <color name="calc_panel_stroke">#33000000</color>
+
+    <!-- Texto -->
+    <color name="calc_text_primary">#FF0B132B</color>
+    <color name="calc_text_secondary">#990B132B</color>
+
+    <!-- Texto -->
+    <color name="calc_text_light">#FFFFFFFF</color>
+    <color name="calc_text_dark_green">#FF1B5E20</color>
+
+    <!-- Números (azules translúcidos) -->
+    <color name="calc_num_bg">#663B82F6</color>      <!-- azul con ~40% alpha -->
+    <color name="calc_num_stroke">#883370E0</color>  <!-- azul más oscuro -->
+
+    <!-- Operaciones (negros) -->
+    <color name="calc_op_bg">#FF000000</color>
+    <color name="calc_op_stroke">#66FFFFFF</color>   <!-- borde blanquecino sutil -->
+
+    <!-- Acciones (= y AC) verde suave -->
+    <color name="calc_act_bg">#6622C55E</color>      <!-- verde suave translúcido -->
+    <color name="calc_act_stroke">#8822A24A</color>  <!-- verde un poco más oscuro -->
+</resources>
