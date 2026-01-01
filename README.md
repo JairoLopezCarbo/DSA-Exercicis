@@ -1,0 +1,10 @@
+# DSA-Exercises
+1. DSA-ex1_00-Polimorfisme
+2. DSA-ex2_jQuery-Bootstrap
+3. DSA-ex3_Estructura-Dades-Cua
+4. DSA-ex4_Cua-Maven-JUnit
+5. DSA-ex5_Calculadora
+6. DSA-ex6_PatronsDisseny1-Singleton-ResourceBundle-I18N
+7. DSA-ex7_PatronsDisseny2-FabricaComandes-Singleton
+8. DSA-ex8_TrackList
+# DSA-Exercicis
